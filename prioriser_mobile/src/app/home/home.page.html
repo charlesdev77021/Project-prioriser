@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Prioriser | Mobile edition 0
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main-body">
+    <div id="left-side-left">
+      <div id="left-side-left-left">
+          <ion-label  class="label">Capital</ion-label><br><br><br>
+          <ion-label class="label">Álimentação</ion-label><br><br>
+          <ion-label class="label">Água</ion-label><br><br>
+          <ion-label  class="label">Energia</ion-label><br><br>
+          <ion-label class="label">Saúde</ion-label><br><br>
+          <ion-label  class="label">Ensino</ion-label><br><br>
+          <ion-label  class="label">Recreação</ion-label><br><br>
+          <ion-label  class="label">Outros</ion-label><br><br>
+
+      </div>
+      <div id="left-side-left-right">
+        
+          <ion-input placeholder="" class="enterCap" [(ngModel)]="capital" type="number"></ion-input>
+          <ion-input placeholder="" class="enter" [(ngModel)]="alimentation" type="number"></ion-input>
+          <ion-input placeholder="" class="enter" [(ngModel)]="water" type="number"></ion-input>
+          <ion-input placeholder="" class="enter" [(ngModel)]="energy" type="number"></ion-input>
+          <ion-input placeholder="" class="enter" [(ngModel)]="helth" type="number"></ion-input>
+          <ion-input placeholder="" class="enter" [(ngModel)]="education" type="number"></ion-input>
+          <ion-input placeholder="" class="enter" [(ngModel)]="recreation" type="number"></ion-input>
+          <ion-input placeholder="" class="enter" [(ngModel)]="others" type="number"></ion-input>
+
+      </div>
+
+    </div>
+
+    <div id="right-side-right">
+      
+      <div id="buttons">
+        <div id="result">
+            <p id="result">Resultado</p>
+        </div>
+        <ion-button expand="block" (click)="prioriserFunc()" color="secondary" class="btn">Sair</ion-button>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <ion-label id="lb-bottom">Criado por: chameleon</ion-label>
+  </div>
+</ion-content>
